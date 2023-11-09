@@ -1,4 +1,4 @@
-<h1 align="center"> Hello there ,Sairam here</h1>
+<h1 align="center"> Hello there , Sairam here</h1>
 
 ## Im a B-Tech Student At PES University 
 
@@ -14,7 +14,7 @@
 ```python
 print("Python Code Block Goes Brr")
 ```
-Where I Studied | Year
+Where I Studied | Year     
 ----------------|----------
 Carmel School   | Till 2021
 Deeksha CFL PU  | 2021-2023
