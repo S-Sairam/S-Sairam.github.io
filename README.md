@@ -14,12 +14,6 @@
 ```python
 print("Python Code Block Goes Brr")
 ```
-Where I Studied | Year     
-----------------|----------------
-Carmel School   | Till 2021
-Deeksha CFL PU  | 2021-2023
-PES University  | 2023-2027
-
 # [My Github](https://github.com/S-Sairam)
 # [GDSC](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 # [GOATED](https://pes.edu/)
