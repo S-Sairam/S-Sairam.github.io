@@ -21,6 +21,6 @@ Deeksha CFL PU  | 2021-2023
 PES University  | 2023-2027
 
 # [My Github](https://github.com/S-Sairam)
-# [GDSC](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+# [GDSC](http://etiny.io/s/v5iXsI)
 # [GOATED](https://pes.edu/)
 # [BEST CLUB EVER](https://www.isfcr.pes.edu/)
