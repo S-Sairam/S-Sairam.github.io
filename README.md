@@ -24,4 +24,3 @@ PES University  | 2023-2027
 # [GDSC](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 # [GOATED](https://pes.edu/)
 # [BEST CLUB EVER](https://www.isfcr.pes.edu/)
-//
