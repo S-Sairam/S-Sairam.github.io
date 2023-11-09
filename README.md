@@ -6,7 +6,7 @@
 ### Do you like to play games?
 #### Hope ISA-1 went good
 
-### i *love*  CTFs
+### i <mark>love</mark> CTFs
 
 ### _What planes do you know abt_
 ### ~~Dont start with a F22 or a Rafale please~~
