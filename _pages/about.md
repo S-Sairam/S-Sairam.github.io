@@ -2,15 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: Bangalore, Karnataka - 560078
 
 profile:
   align: right
   image: prof_pic.jpeg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: 
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -24,8 +24,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My research is focused on architecting robust and verifiable AI by forging a principled synthesis of Causal Inference, Probabilistic Modeling, and Neuro-Symbolic Reasoning.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research is dedicated to a single challenge: moving beyond the brittle, correlational paradigms of modern AI to build systems that can reason with causal understanding and verifiable robustness. I believe the next generation of artificial intelligence will not be built on scale alone, but on a principled synthesis of deep learning's perceptual power with the rigorous structures of causality, logic, and probability.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My work is focused on attacking this problem from first principles. I architect and build Causal-NeuroSymbolic frameworks designed to operate under the noisy, uncertain, and contradictory conditions that define real-world problems. My current research involves two primary thrusts:
+1. Developing novel architectures, like HyCaNeS, that treat symbolic knowledge not as rigid constraints but as learnable, probabilistic priors, enabling a new level of robustness.
+2. Forging new methods for rigorous causal effect estimation on complex, structured data, such as our GraphDML framework for networked systems.
