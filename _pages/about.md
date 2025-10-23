@@ -2,13 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Bangalore, Karnataka - 560078
+subtitle: My research is focused on architecting robust and verifiable AI by forging a principled synthesis of Causal Inference, Probabilistic Modeling, and Neuro-Symbolic Reasoning.
+
 
 profile:
   align: right
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: 
+  more_info: Bangalore, Karnataka, India - 560078.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -24,7 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My research is focused on architecting robust and verifiable AI by forging a principled synthesis of Causal Inference, Probabilistic Modeling, and Neuro-Symbolic Reasoning.
 
 My research is dedicated to a single challenge: moving beyond the brittle, correlational paradigms of modern AI to build systems that can reason with causal understanding and verifiable robustness. I believe the next generation of artificial intelligence will not be built on scale alone, but on a principled synthesis of deep learning's perceptual power with the rigorous structures of causality, logic, and probability.
 
