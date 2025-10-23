@@ -1,7 +1,7 @@
 github_users:
   - S-Sairam
 
-repo_description_lines_max: 2
+repo_description_lines_max: 4
 
 github_repos:
   - S-Sairam/micrograd
