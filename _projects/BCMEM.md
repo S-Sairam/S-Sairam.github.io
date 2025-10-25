@@ -10,7 +10,7 @@ related_publications: sairam2025bhargava
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bcmem_3d_embeddings.png" title="Emergent Structure in Latent Space" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bhargava_cube_3d_visualization.png" title="Emergent Structure in Latent Space" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
