@@ -5,6 +5,7 @@ description: Architectural Regularization via Number-Theoretic Priors
 img: /assets/img/bcmem_banner.png # Suggestion: Create a visually appealing banner image from your 3D plot
 importance: 1
 category: Research
+tags: Robustness Representation-Learning Inductive-Bias Architectural-Regularization Interpretability Research
 related_publications: sairam2025bhargava 
 ---
 
