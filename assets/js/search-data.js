@@ -58,13 +58,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "nav-submenus",
-          title: "submenus",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/_pages/dropdown/";
-          },
         },{id: "post-the-geometry-of-thought-forging-structure-from-chaos",
         
           title: "The Geometry of Thought: Forging Structure from Chaos",
