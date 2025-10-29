@@ -36,4 +36,4 @@ This early study taught me that the goal isn't just to build machines with beaut
 
 To formalize this independent work, a paper was written and subsequently accepted for publication by Springer in their Lecture Notes in Computer Science series.
 
-[View the Code on GitHub](https://github.com/S-Sairam/bcmem) | [Read the Full Paper](link-to-your-arxiv)
+[View the Code on GitHub](https://github.com/S-Sairam/bcmem)
