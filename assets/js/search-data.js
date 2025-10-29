@@ -58,11 +58,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-the-geometry-of-thought-forging-structure-from-chaos",
+        },{id: "post-the-geometry-of-thought-an-early-exploration-in-structured-representation",
         
-          title: "The Geometry of Thought: Forging Structure from Chaos",
+          title: "The Geometry of Thought: An Early Exploration in Structured Representation",
         
-        description: "A research project on using number theory to build more robust and interpretable AI systems.",
+        description: "An independent undergraduate research project exploring the use of number-theoretic priors for structured representation learning.",
         section: "Posts",
         handler: () => {
           
