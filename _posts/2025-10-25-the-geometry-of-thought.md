@@ -34,6 +34,6 @@ This realization was the direct catalyst for my subsequent work. It now drives m
 
 This early study taught me that the goal isn't just to build machines with beautiful internal structure, but to ensure that structure translates into verifiable gains in robustness and generalization where it matters most.
 
-To formalize this independent work, a paper was written and subsequently accepted for publication by Springer in their Lecture Notes in Computer Science series.
+To formalize this independent work, a paper was drafted and submitted for peer review. The process yielded invaluable feedback, highlighting several avenues for significant improvement—particularly the need for more rigorous, large-scale validation. Based on this expert critique, the paper was withdrawn to allow for the comprehensive rework it deserves.
 
 [View the Code on GitHub](https://github.com/S-Sairam/bcmem)
