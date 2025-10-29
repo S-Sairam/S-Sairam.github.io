@@ -74,11 +74,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-bcmem",
-          title: 'BCMEM',
-          description: "Architectural Regularization via Number-Theoretic Priors",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/BCMEM/";
             },},{
         id: 'social-email',
         title: 'email',
