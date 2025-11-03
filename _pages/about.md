@@ -29,7 +29,7 @@ My work is driven by a core philosophy: true progress in AI requires moving beyo
 My projects are demonstrations of this philosophy in action:
 
 *   **Reproducibility and Analysis:** I performed a complete, clean-room replication of the **Sharpness-Aware Minimization (SAM)** optimizer (ICLR 2021). By building the algorithm solely from the paper's description, I successfully reproduced its CIFAR-10 results, validating its performance and the importance of scientific rigor.
-    *   **[View the Project Analysis & Code →](httpd://github.com/S-Sairam/sam-optimizer)**
+    *   **[View the Project Analysis & Code →](https://github.com/S-Sairam/sam-optimizer)**
 
 *   **First-Principles Engineering:** To master the mechanics of deep learning, I engineered a complete, **reverse-mode automatic differentiation engine** in Python from the ground up. I then built and trained a neural network using only this custom framework, demonstrating a ground-up understanding of gradient-based learning.
     *   **[Explore the Autodiff Engine →](https://github.com/S-Sairam/micrograd)**
