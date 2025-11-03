@@ -4,8 +4,5 @@ github_users:
 repo_description_lines_max: 4
 
 github_repos:
+  - S-Sairam/sam-optimizer 
   - S-Sairam/micrograd
-  - S-Sairam/CodeFusion2024
-  - S-Sairam/Own-Neural-Network
-  - S-Sairam/BCMEM
-  - S-Sairam/artemis-optimizer
