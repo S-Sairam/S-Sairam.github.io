@@ -58,7 +58,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-the-geometry-of-thought-an-early-exploration-in-structured-representation",
+        },{id: "post-science-not-sorcery-a-first-principles-replication-of-sharpness-aware-minimization",
+        
+          title: "Science, Not Sorcery: A First-Principles Replication of Sharpness-Aware Minimization",
+        
+        description: "An independent study in scientific reproducibility, rebuilding the ICLR 2021 SAM optimizer from scratch to validate its claims and understand its mechanics.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/sam-replication/";
+          
+        },
+      },{id: "post-the-geometry-of-thought-an-early-exploration-in-structured-representation",
         
           title: "The Geometry of Thought: An Early Exploration in Structured Representation",
         
