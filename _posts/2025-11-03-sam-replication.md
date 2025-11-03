@@ -1,46 +1,45 @@
 ---
 layout: post
-title: "Science, Not Sorcery: A First-Principles Replication of Sharpness-Aware Minimization"
+title: "Why Reproducibility is the Ultimate Teacher: A Clean-Room SAM Replication"
 date: 2025-11-03
-description: An independent study in scientific reproducibility, rebuilding the ICLR 2021 SAM optimizer from scratch to validate its claims and understand its mechanics.
+description: A deep dive into scientific validation, deconstructing the ICLR 2021 SAM optimizer from first principles by analyzing the raw training process.
 tags:
 - Reproducibility
-- Deep Learning
 - Optimization
 - Scientific Rigor
+- Deep Learning
 - Undergraduate Research
 ---
 
-### What separates a good model from a *robust* one?
+### The promise of deep learning is often ahead of our understanding. To bridge that gap, I believe in deconstruction.
 
-In deep learning, it's easy to achieve high accuracy on a training set. It's far harder to build a model that generalizes reliably to the unseen chaos of the real world. Many state-of-the-art models are brittle, their success tied to a "sharp" minimum in the loss landscape—a narrow ravine that is easy to fall out of.
+A state-of-the-art paper presents an algorithm as a clean, two-page mathematical object. But its true character is only revealed in the chaotic, 200-epoch firefight of training. I chose the ICLR 2021 SAM paper not just to implement it, but to live through its learning process—to understand the core principles of sharpness and generalization from the ground up by watching them unfold.
 
-The ICLR 2021 paper on **Sharpness-Aware Minimization (SAM)** proposed an elegant solution: force the optimizer to find not just a low point, but a wide, flat valley, making the model inherently more robust.
+My goal was a **clean-room replication**: to build the optimizer based solely on the paper's algorithmic description and force it to prove itself, with every step logged and publicly scrutinized. This transforms the exercise from mere implementation to genuine scientific validation.
 
-This claim was powerful, and it led me to a critical question: could I, as an independent researcher with nothing but the paper itself, rebuild this complex system from scratch and verify its results? This project wasn't about inventing a new method, but about engaging in a core, often-neglected, scientific practice: **rigorous replication.**
+### The Process and The Struggle: A Tale of Two Ascents
 
-The goal was to perform a complete, clean-room implementation. Using only the paper's algorithmic description, I engineered a PyTorch optimizer from first principles. It follows the paper's two-step process: first, an adversarial ascent to find a point of higher loss, followed by a descent using the gradient from that perturbed position.
+The logs tell a story of two distinct phases of learning. The initial ascent was a brute-force climb: the model was a newborn learning to walk. The first epoch ended with a validation accuracy of just 53.17%, but the learning was explosive. In just 37 epochs, it had shattered the 90% accuracy barrier, a furious sprint through the easiest parts of the problem space.
 
-The experiment was a success, reproducing the paper's benchmark on CIFAR-10 with a Wide-ResNet-28-10.
+But the real struggle, the part that defines research, was the second ascent: the long, grueling climb from 90% to the frontier of the problem. This wasn't a sprint; it was a siege. It took another **104 epochs** to crawl from 90.39% (Epoch 37) to break the 95% barrier (Epoch 141). This was a phase of meticulous, incremental refinement, where every fraction of a percent was a hard-won victory. This is the reality of pushing the state-of-the-art—a long plateau of painstaking work where the real learning happens.
 
-| Experiment | Reported Test Accuracy (%) |
-| :--- | :---: |
-| **SAM (Foret et al., ICLR 2021)** | **~97.3** |
-| **This First-Principles Replication** | **~96.74** |
+### The "Aha!" Moment: The Story in the Logs
 
-![W&B Logs](/assets/img/train_loss.png) 
-*The full training run, publicly logged on Weights & Biases, shows stable convergence to the final high-accuracy state.*
+The final `train_loss` was a near-perfect `0.0018`—a sign of the model's complete mastery over the data it had seen. But the true story, the "aha!" moment, was found by looking at the validation loss and the `wandb` graphs.
 
-The final accuracy of **96.74%** is within **0.56%** of the original paper—a strong validation of the algorithm's claims and the correctness of my implementation.
+Watching the `val_accuracy` curve on the monitor wasn't just a validation; it was a visceral lesson in asymptotic limits. You could see the furious early gains flatten into a slow, determined grind. The 'aha' moment was internalizing that SAM's job is not to force the `train_loss` to absolute zero, but to manage the stubborn, persistent **gap** between training and validation. It's a physical regularizer on the geometry of the solution, sacrificing training perfection for a robust, generalizable "flat" minimum. This is an intuition that can only be built by watching the struggle, epoch by epoch.
 
-### The Real Lesson: Research is More Than the Algorithm
+![W&B Plot Comparison](/assets/img/train_loss.png) 
+*The story of the run, logged on Weights & Biases: validation accuracy's long, slow climb to its peak, mirroring the optimizer's search for a robust, generalizable solution.*
 
-The most valuable outcome of this project was not the final accuracy number, but the insight gained from the tiny gap between my result and the paper's. A clean, two-page algorithm in a paper belies the complex reality of its implementation. That 0.56% difference is a lesson in the hidden variables of deep learning research: minuscule differences in data augmentation pipelines, random seeds, software versions, or even GPU hardware can create subtle but measurable shifts in outcomes.
+The final result, a test accuracy of **96.74%**, successfully validated the paper's claims. But the real outcome was the hard-won intuition behind the numbers, earned by observing the raw process.
 
-This study taught me that true understanding of a research paper comes not from reading it, but from building it. It is in the building that you discover the unwritten details and develop an intuition for the system's sensitivities.
+### The Forward Look: From Deconstruction to Architecture
 
-This commitment to deep, validated understanding is now the foundation of my current work. It directly motivates the development of **[Artemis, my novel optimizer]**, which combines the geometric insights I validated in SAM with principles of Bayesian uncertainty. This replication wasn't just an exercise; it was the necessary groundwork for building the next generation of robust and reliable optimizers.
+This exercise in reproducibility wasn't an end in itself. It was training for my ultimate goal: to move from understanding existing algorithms to architecting new ones. The patience learned during that 104-epoch climb from 90 to 95 percent is the same patience required to develop a fundamentally new idea.
+
+This deep dive into the geometry of optimization is the direct foundation for my current work on **[Artemis, a novel optimizer]**, which seeks to unify these geometric insights with the principled uncertainty of Bayesian inference. Because to build the future, you must first be able to perfectly, and patiently, rebuild the present.
 
 [View the Code on GitHub](https://github.com/S-Sairam/sam-optimizer)
 
-[See the Full, Transparent Training Logs on W&B](https://wandb.ai/pesu-ai-ml/sam-replication-cifar10/runs/mjyz5xy4)
+[See the Full, Unabridged Training Logs on W&B](https://wandb.ai/pesu-ai-ml/sam-replication-cifar10/runs/mjyz5xy4)
