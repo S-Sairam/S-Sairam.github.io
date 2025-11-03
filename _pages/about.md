@@ -37,5 +37,3 @@ My projects are demonstrations of this philosophy in action:
 ### **Current Research & Future Direction**
 
 Leveraging this foundational experience, I am now focused on the theory and practice of advanced optimization. My current project is the development of **Artemis**, a novel optimizer designed to unify the geometric insights of methods like SAM with the principled uncertainty of Bayesian inference.
-
-This work is the first step in my long-term research agenda: **to architect robust and verifiable AI by forging a principled synthesis of Causal Inference, Probabilistic Modeling, and Neuro-Symbolic Reasoning.** My goal is to be a researcher who builds, understands, and advances the fundamental tools of machine learning.
