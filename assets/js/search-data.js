@@ -58,11 +58,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "post-science-not-sorcery-a-first-principles-replication-of-sharpness-aware-minimization",
+        },{id: "post-why-reproducibility-is-the-ultimate-teacher-a-clean-room-sam-replication",
         
-          title: "Science, Not Sorcery: A First-Principles Replication of Sharpness-Aware Minimization",
+          title: "Why Reproducibility is the Ultimate Teacher: A Clean-Room SAM Replication",
         
-        description: "An independent study in scientific reproducibility, rebuilding the ICLR 2021 SAM optimizer from scratch to validate its claims and understand its mechanics.",
+        description: "A deep dive into scientific validation, deconstructing the ICLR 2021 SAM optimizer from first principles by analyzing the raw training process.",
         section: "Posts",
         handler: () => {
           
