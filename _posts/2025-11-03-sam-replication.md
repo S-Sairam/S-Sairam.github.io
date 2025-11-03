@@ -13,7 +13,7 @@ tags:
 
 ### The promise of deep learning is often ahead of our understanding. To bridge that gap, I believe in deconstruction.
 
-A state-of-the-art paper presents an algorithm as a clean mathematical object. But its true character is only revealed in the chaotic, 200-epoch firefight of training. I chose the ICLR 2021 SAM paper not just to implement it, but to inhabit that space, to understand the core principles of sharpness and generalization from the ground up by watching them unfold.
+A state-of-the-art paper presents an algorithm as a clean, two-page mathematical object. But its true character is only revealed in the chaotic, 200-epoch firefight of training. I chose the ICLR 2021 SAM paper not just to implement it, but to inhabit that space—to understand the core principles of sharpness and generalization from the ground up by watching them unfold.
 
 My goal was a **clean-room replication**: to build the optimizer based solely on the paper's algorithmic description and force it to prove itself, with every step logged and publicly scrutinized. This transforms the exercise from mere implementation to genuine scientific validation.
 
@@ -27,13 +27,14 @@ But the real struggle, the part that defines research, was the second ascent: th
 
 The final `train_loss` was a near-perfect `0.0018`, but the true story was in the gap between training and validation. It became clear that SAM's job isn't to force `train_loss` to absolute zero, but to manage that gap. It's a **physical regularizer on the geometry of the solution space**, sacrificing training perfection for a robust, "flat" basin.
 
-<img src="/assets/img/sam_wandb_graph.png"
-     alt="W&B Plot showing the long, steady climb of validation accuracy for the SAM optimizer"
-     style="max-width: 650px; width: 100%; display: block; margin-left: auto; margin-right: auto; border-radius: 8px; margin-top: 20px; margin-bottom: 20px;">
-
-<p style="text-align: center; font-size: 0.8em; color: #666; margin-top: -10px;">
+<d-figure class="l-body">
+  <img src="/assets/img/sam_wandb_graph.png"
+       alt="W&B Plot showing the long, steady climb of validation accuracy for the SAM optimizer"
+       style="border-radius: 8px;">
+  <figcaption>
     The story of the run, logged on Weights & Biases: validation accuracy's long, slow climb to its peak, mirroring the optimizer's search for a robust solution.
-</p>
+  </figcaption>
+</d-figure>
 
 The final result, a test accuracy of **96.74%**, successfully validated the paper's claims. But the real outcome was the hard-won intuition behind the numbers.
 
