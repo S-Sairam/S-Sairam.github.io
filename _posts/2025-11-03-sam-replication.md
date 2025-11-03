@@ -27,10 +27,10 @@ But the real struggle, the part that defines research, was the second ascent: th
 
 The final `train_loss` was a near-perfect `0.0018`, but the true story was in the gap between training and validation. It became clear that SAM's job isn't to force `train_loss` to absolute zero, but to manage that gap. It's a **physical regularizer on the geometry of the solution space**, sacrificing training perfection for a robust, "flat" basin.
 
-<d-figure class="l-body">
+<d-figure style="max-width: 700px; margin: 0 auto;">
   <img src="/assets/img/sam_wandb_graph.png"
        alt="W&B Plot showing the long, steady climb of validation accuracy for the SAM optimizer"
-       style="border-radius: 8px;">
+       style="width: 100%; border-radius: 8px;">
   <figcaption>
     The story of the run, logged on Weights & Biases: validation accuracy's long, slow climb to its peak, mirroring the optimizer's search for a robust solution.
   </figcaption>
