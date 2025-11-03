@@ -13,32 +13,33 @@ tags:
 
 ### The promise of deep learning is often ahead of our understanding. To bridge that gap, I believe in deconstruction.
 
-A state-of-the-art paper presents an algorithm as a clean, two-page mathematical object. But its true character is only revealed in the chaotic, 200-epoch firefight of training. I chose the ICLR 2021 SAM paper not just to implement it, but to live through its learning process—to understand the core principles of sharpness and generalization from the ground up by watching them unfold.
+A state-of-the-art paper presents an algorithm as a clean mathematical object. But its true character is only revealed in the chaotic, 200-epoch firefight of training. I chose the ICLR 2021 SAM paper not just to implement it, but to inhabit that space, to understand the core principles of sharpness and generalization from the ground up by watching them unfold.
 
 My goal was a **clean-room replication**: to build the optimizer based solely on the paper's algorithmic description and force it to prove itself, with every step logged and publicly scrutinized. This transforms the exercise from mere implementation to genuine scientific validation.
 
 ### The Process and The Struggle: A Tale of Two Ascents
 
-The logs tell a story of two distinct phases of learning. The initial ascent was a brute-force climb: the model was a newborn learning to walk. The first epoch ended with a validation accuracy of just 53.17%, but the learning was explosive. In just 37 epochs, it had shattered the 90% accuracy barrier, a furious sprint through the easiest parts of the problem space.
+The logs tell a story of two distinct phases of learning. The initial ascent was a brute-force climb. The first epoch ended with a validation accuracy of just 53.17%, but the learning was explosive. In just 37 epochs, it had shattered the 90% accuracy barrier, a furious sprint through the easiest parts of the problem space.
 
-But the real struggle, the part that defines research, was the second ascent: the long, grueling climb from 90% to the frontier of the problem. This wasn't a sprint; it was a siege. It took another **104 epochs** to crawl from 90.39% (Epoch 37) to break the 95% barrier (Epoch 141). This was a phase of meticulous, incremental refinement, where every fraction of a percent was a hard-won victory. This is the reality of pushing the state-of-the-art—a long plateau of painstaking work where the real learning happens.
+But the real struggle, the part that defines research, was the second ascent: the long, grueling climb from 90% to the frontier of the problem. This wasn't a sprint; it was a siege. It took another **104 epochs** to crawl from 90.39% (Epoch 37) to break the 95% barrier (Epoch 141). This was a phase of meticulous, incremental refinement.
 
 ### The "Aha!" Moment: The Story in the Logs
 
-The final `train_loss` was a near-perfect `0.0018`—a sign of the model's complete mastery over the data it had seen. But the true story, the "aha!" moment, was found by looking at the validation loss and the `wandb` graphs.
+The final `train_loss` was a near-perfect `0.0018`, but the true story was in the gap between training and validation. It became clear that SAM's job isn't to force `train_loss` to absolute zero, but to manage that gap. It's a **physical regularizer on the geometry of the solution space**, sacrificing training perfection for a robust, "flat" basin.
 
-Watching the `val_accuracy` curve on the monitor wasn't just a validation; it was a visceral lesson in asymptotic limits. You could see the furious early gains flatten into a slow, determined grind. The 'aha' moment was internalizing that SAM's job is not to force the `train_loss` to absolute zero, but to manage the stubborn, persistent **gap** between training and validation. It's a physical regularizer on the geometry of the solution, sacrificing training perfection for a robust, generalizable "flat" minimum. This is an intuition that can only be built by watching the struggle, epoch by epoch.
+<img src="/assets/img/sam_wandb_graph.png"
+     alt="W&B Plot showing the long, steady climb of validation accuracy for the SAM optimizer"
+     style="max-width: 650px; width: 100%; display: block; margin-left: auto; margin-right: auto; border-radius: 8px; margin-top: 20px; margin-bottom: 20px;">
 
-![W&B Plot Comparison](/assets/img/train_loss.png) 
-*The story of the run, logged on Weights & Biases: validation accuracy's long, slow climb to its peak, mirroring the optimizer's search for a robust, generalizable solution.*
+<p style="text-align: center; font-size: 0.8em; color: #666; margin-top: -10px;">
+    The story of the run, logged on Weights & Biases: validation accuracy's long, slow climb to its peak, mirroring the optimizer's search for a robust solution.
+</p>
 
-The final result, a test accuracy of **96.74%**, successfully validated the paper's claims. But the real outcome was the hard-won intuition behind the numbers, earned by observing the raw process.
+The final result, a test accuracy of **96.74%**, successfully validated the paper's claims. But the real outcome was the hard-won intuition behind the numbers.
 
 ### The Forward Look: From Deconstruction to Architecture
 
-This exercise in reproducibility wasn't an end in itself. It was training for my ultimate goal: to move from understanding existing algorithms to architecting new ones. The patience learned during that 104-epoch climb from 90 to 95 percent is the same patience required to develop a fundamentally new idea.
-
-This deep dive into the geometry of optimization is the direct foundation for my current work on **[Artemis, a novel optimizer]**, which seeks to unify these geometric insights with the principled uncertainty of Bayesian inference. Because to build the future, you must first be able to perfectly, and patiently, rebuild the present.
+This exercise in reproducibility wasn't an end in itself. It was training. The patience learned during that 104-epoch climb is the same patience required to develop a new idea. This deep dive is the direct foundation for my current work on **[Artemis, a novel optimizer]**, which seeks to unify these geometric insights with the principled uncertainty of Bayesian inference. Because to build the future, you must first be able to perfectly, and patiently, rebuild the present.
 
 [View the Code on GitHub](https://github.com/S-Sairam/sam-optimizer)
 
