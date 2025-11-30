@@ -33,7 +33,3 @@ My projects are demonstrations of this philosophy in action:
 
 *   **First-Principles Engineering:** To master the mechanics of deep learning, I engineered a complete, **reverse-mode automatic differentiation engine** in Python from the ground up. I then built and trained a neural network using only this custom framework, demonstrating a ground-up understanding of gradient-based learning.
     *   **[Explore the Autodiff Engine →](https://github.com/S-Sairam/micrograd)**
-
-### **Current Research & Future Direction**
-
-Leveraging this foundational experience, I am now focused on the theory and practice of advanced optimization. My current project is the development of **Artemis**, a novel optimizer designed to unify the geometric insights of methods like SAM with the principled uncertainty of Bayesian inference.
