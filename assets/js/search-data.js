@@ -57,8 +57,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-selected-as-teaching-assistant-for-mathematics-for-computer-science-at-pes-university",
+          title: '🎓 Selected as Teaching Assistant for Mathematics for Computer Science at PES University....',
           description: "",
           section: "News",},{
         id: 'social-email',
