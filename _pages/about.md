@@ -24,12 +24,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My work is driven by a core philosophy: true progress in AI requires moving beyond "black box" models and building systems from **first principles**. I focus on meticulous engineering and the scientific principle of reproducibility to gain a deep, functional understanding of the mechanics that govern machine learning.
+I am a third-year undergraduate researcher at PES University. My research focuses on Controlled Failure Modes in Deep Learning currently looking at geometric instability in Low-Precision Optimization.
 
-My projects are demonstrations of this philosophy in action:
+Some of my projects:
 
-*   **Reproducibility and Analysis:** I performed a complete, clean-room replication of the **Sharpness-Aware Minimization (SAM)** optimizer (ICLR 2021). By building the algorithm solely from the paper's description, I successfully reproduced its CIFAR-10 results, validating its performance and the importance of scientific rigor.
-    *   **[View the Project Analysis & Code →](https://github.com/S-Sairam/sam-optimizer)**
+*   **The Geometry of Bit-Collapse** Investigating the spectral impact of Quantization. Demonstrated that Int8 quantization induces sharp minima (Bit-Collapse) and that SAM restores geometric robustness.
+    *   **[View the Plots](https://github.com/S-Sairam/bit-collapse-geometry)**
 
 *   **First-Principles Engineering:** To master the mechanics of deep learning, I engineered a complete, **reverse-mode automatic differentiation engine** in Python from the ground up. I then built and trained a neural network using only this custom framework, demonstrating a ground-up understanding of gradient-based learning.
     *   **[Explore the Autodiff Engine →](https://github.com/S-Sairam/micrograd)**
