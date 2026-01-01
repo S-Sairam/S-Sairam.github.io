@@ -60,6 +60,9 @@ ninja.data = [{
             },},{id: "news-selected-as-teaching-assistant-for-mathematics-for-computer-science-at-pes-university",
           title: '🎓 Selected as Teaching Assistant for Mathematics for Computer Science at PES University....',
           description: "",
+          section: "News",},{id: "news-submitted-first-author-paper-systematic-dissection-of-graph-r-learners-to-transactions-on-machine-learning-research-tmlr-under-review-paper",
+          title: 'Submitted first-author paper, “Systematic Dissection of Graph R-Learners,” to Transactions on Machine Learning...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
