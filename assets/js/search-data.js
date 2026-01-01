@@ -63,6 +63,9 @@ ninja.data = [{
           section: "News",},{id: "news-submitted-first-author-paper-systematic-dissection-of-graph-r-learners-to-transactions-on-machine-learning-research-tmlr-under-review-paper",
           title: 'Submitted first-author paper, “Systematic Dissection of Graph R-Learners,” to Transactions on Machine Learning...',
           description: "",
+          section: "News",},{id: "news-completed-preliminary-research-on-the-geometry-of-bit-collapse-identifying-a-5-7x-spectral-spike-in-the-hessian-of-int8-quantized-networks-visit-the-repository",
+          title: 'Completed preliminary research on “The Geometry of Bit-Collapse,” identifying a 5.7x spectral spike...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
