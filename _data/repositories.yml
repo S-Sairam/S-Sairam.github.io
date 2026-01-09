@@ -6,3 +6,5 @@ repo_description_lines_max: 4
 github_repos:
   - S-Sairam/sam-optimizer 
   - S-Sairam/micrograd
+  - S-Sairam/quant-lens
+  - S-Sairam/bit-collapse-geometry
